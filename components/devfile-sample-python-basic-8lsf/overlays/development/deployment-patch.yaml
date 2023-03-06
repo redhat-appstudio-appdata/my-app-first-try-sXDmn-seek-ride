@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-8lsf
+  namespace: svatares-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:d230c732a5844ab12ca5d2f3c291474cb73fd445bab1b4a40596ff0bf2c0f060
+        name: my-python
+        resources: {}
+status: {}
